@@ -1,0 +1,3 @@
+#!/bin/bash
+curl -o /dev/null --data "j_username=admin&j_password=YOURPASSWORD" http://localhost:4040/j_spring_security_check --cookie-jar /tmp/cookies.txt --silent 2>&1
+curl -o /dev/null --cookie /tmp/cookies.txt http://localhost:4040/searchSettings.view?update=full --silent 2>&1
